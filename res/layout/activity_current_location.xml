@@ -1,0 +1,37 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#eeeeee" >
+
+        <ImageView
+            android:id="@+id/streetviewImage"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/image_holder" />
+
+        <ImageView
+            android:id="@+id/streetviewBorder"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/streetviewImage"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/image_border" />
+
+        <TextView
+            android:id="@+id/stopTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/streetviewImage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_background"
+            android:gravity="center_horizontal"
+            android:text="Buckingham Drive - rdgagtd"
+            android:textColor="#e9e9e9"
+            android:textSize="32dp" />
+
+    </RelativeLayout>
